@@ -18,7 +18,7 @@ body, html {
     max-width: 90vw;
     min-width: 50vw;
     width: 80%;
-    border: 3px solid red;
+    /*border: 3px solid red;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -27,18 +27,20 @@ body, html {
 
 .question__container {
     margin-right: 30px;
-    border: 3px solid green;
+    /*border: 3px solid green;*/
 }
 
 
 .price__container {
-    border: 3px solid purple;
+    /*border: 3px solid purple;*/
     width: 40%;
 }
 
 .bill__container {
-    justify-content: center;
-    align-items: center;
+    /*border: 2px solid red;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 #bill > * {
@@ -51,6 +53,6 @@ body, html {
     display: none;
 }
 
-#seo, #design {
+#seo, #design, #totalPrice {
     display: none;
 }

@@ -28,7 +28,7 @@ document.querySelectorAll('.button').forEach(item => {
             appendPrice(event);
         } else {
             //User has chosen for a option which has no value. If previously selected, hide this time
-            document.getElementById(event.target.name).style.display = 'none';
+            document.getElementById(event.target.name).style.display = 'none'
             totalPrice[event.target.name] = 0;
             updateTotalPrice();
         }
@@ -54,5 +54,12 @@ function updateTotalPrice() {
         total += totalPrice[price];
     }
 
-    $('#totalPrice').text(total > 0 ? total : '');
+    if (total > 0) {
+        document.getElementById("totalPrice").style.display = 'flex'
+        document.getElementById("totalPrice").classList.add('animate__bounceIn')
+        $('#totalPrice').text(total);
+    } else {
+        // document.getElementById("totalPrice").classList.add('animate__bounceOut')
+        document.getElementById("totalPrice").style.display = 'none'
+    }
 }
