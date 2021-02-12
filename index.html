@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/Stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" />
+</head>
+<body>
+
+<div class="main__container">
+    <div class="question__container">
+        <div>
+            <p>Wil je SEO?</p>
+            <div class="question__options">
+                <button type="button" class="button" name="seo" id="seo_1">Ja</button>
+                <button type="button" class="button" name="seo" id="seo_2">Nee</button>
+            </div>
+        </div>
+
+        <div>
+            <p>Do you need help with branding?</p>
+            <div class="question__options">
+                <button type="button" class="button" name="design" id="design_1">150</button>
+                <button type="button" class="button" name="design" id="design_2">300</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="price__container">
+        <p>lorum etc</p>
+
+        <div id="seo" class="bill__container animate__animated">
+            <p>SEO: </p>
+            <p id="price__seo"></p>
+        </div>
+
+        <div id="design" class="bill__container animate__animated">
+            <p>Design: </p>
+            <p id="price__design"></p>
+        </div>
+
+        <div class="bill__container">
+            <p id="totalPrice"></p>
+        </div>
+    </div>
+</div>
+
+<div id="error">Something went wrong!</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="assets/price-checker.js"></script>
+</body>
+</html>
